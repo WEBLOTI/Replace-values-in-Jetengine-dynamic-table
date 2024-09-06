@@ -1,0 +1,25 @@
+/* Class to replace “yes” and “no” with icons 
+Class name: table-icon-replace */
+
+.table-icon-replace td {
+  position: relative;
+  padding-left: 30px; /* Adjust according to icon size */
+}
+
+/* Replace “yes” with the corresponding icon */
+.table-icon-replace td:contains('yes')::before {
+  content: url('http://evaristodelossantos.com/wp-content/uploads/2024/09/check_24dp_0000F5_FILL0_wght400_GRAD0_opsz24.svg');
+  position: absolute;
+  left: 5px; /* Adjust according to padding */
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/* Replace “no” with the corresponding icon */
+.table-icon-replace td:contains('no')::before {
+  content: url('http://evaristodelossantos.com/wp-content/uploads/2024/09/close_24dp_EA3323_FILL0_wght400_GRAD0_opsz24.svg');
+  position: absolute;
+  left: 5px; /* Adjust for padding */
+  top: 50%;
+  transform: translateY(-50%);
+}

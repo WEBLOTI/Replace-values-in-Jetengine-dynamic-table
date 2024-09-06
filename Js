@@ -1,0 +1,9 @@
+document.querySelectorAll('.table-icon-replace td').forEach(cell => {
+  if (cell.textContent.trim() === 'yes') {
+    cell.innerHTML = '<img src="URL_ICON"" alt="Yes" />';
+  } else if (cell.textContent.trim() === 'no') {
+    cell.innerHTML = '<img src="URL_ICON" alt="No" />';
+  }
+});
+
+/* Colocar en el Footer */
